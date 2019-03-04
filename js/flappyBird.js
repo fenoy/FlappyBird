@@ -13,3 +13,5 @@ function draw () {
         ctx.drawImage(bg, 0, 0, canvas.width, canvas.height)
     }
 }
+
+document.addEventListener('DOMContentLoaded', draw());
