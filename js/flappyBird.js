@@ -1,23 +1,21 @@
+import {params, Item} from "./params"
+
 // Load canvas
-var canvas = document.getElementById('window');
-var ctx = canvas.getContext('2d');
+let canvas = document.getElementById('window');
+let ctx = canvas.getContext('2d');
 
 // Images
-var bg = new Image();
-var fg = new Image();
-
-bg.src = "img/bg.png";
-fg.src = "img/fg.png";
+let bg = new Item();
+let fg = new Item();
 
 // Draw images
 function draw () {
-    bg.onload = () => {
-        ctx.drawImage(bg, 0, 0, canvas.width, canvas.height)
-    };
+    bg.loadImage;
+    fg.loadImage;
 
-    fg.onload = () => {
-        ctx.drawImage(fg, 0, 0.8 * canvas.height, canvas.width, canvas.height)
-    }
+    setTimeout(() => {
+        requestAnimationFrame(draw);
+    }, 1000 / params.fps);
 }
 
 document.addEventListener('DOMContentLoaded', draw());
