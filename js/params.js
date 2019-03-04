@@ -1,5 +1,6 @@
 const params = {
-    'fps':  30
+    'fps':  30,
+    'g': 1,
 };
 
 class Item {
@@ -17,6 +18,15 @@ class Item {
         img.onload = () => {
             img.drawImage(img, this.x, this.y, this.width, this.height)
         };
+    }
+}
+
+class Bird extends Item {
+    constructor(imagePath, x, y, width, height) {
+        super(imagePath, x, y, width, height);
+
+        this.vx = vx;
+        this.vy = vy;
     }
 }
 
