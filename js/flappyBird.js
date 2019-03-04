@@ -47,14 +47,14 @@ let bg = new Item(
 
 let fg = new Item(
     "./img/fg.png",
-    0, 0.75 * canvas.width,
+    0, 0.75 * canvas.height,
     canvas.width, 0.25 * canvas.height
 );
 
 let bird = new Item(
     "./img/bird.png",
     0.3 * canvas.width, 0.3 * canvas.height,
-    80, 80
+    60, 50
 );
 
 // Draw images
