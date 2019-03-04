@@ -40,19 +40,19 @@ class Item {
 
 // Images
 let bg = new Item(
-    "/img/bg.png",
+    "./img/bg.png",
     0, 0,
     canvas.width, canvas.height
 );
 
 let fg = new Item(
-    "/img/fg.png",
+    "./img/fg.png",
     0, 0.75 * canvas.width,
     canvas.width, 0.25 * canvas.height
 );
 
 let bird = new Item(
-    "/img/bird.png",
+    "./img/bird.png",
     0.3 * canvas.width, 0.3 * canvas.height,
     80, 80
 );
