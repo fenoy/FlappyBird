@@ -1,4 +1,4 @@
-import {params, Item} from "./params"
+import {params, Item} from '/params';
 
 // Load canvas
 let canvas = document.getElementById('window');
