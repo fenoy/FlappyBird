@@ -1,5 +1,7 @@
 body, html {
-    background: beige;
+    background: #fceabb;
+    background: -webkit-linear-gradient(to right, #f8b500, #fceabb);
+    background: linear-gradient(to right, #f8b500, #fceabb);
 }
 
 .text-center{
