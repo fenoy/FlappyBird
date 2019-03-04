@@ -1,9 +1,10 @@
 body, html {
-    background: linear-gradient(to bottom, #ffcb46, #fff1bc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #f8b500, #fceabb);
 }
 
-.text-center{
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
